@@ -4,6 +4,11 @@ def my_each(array)
     while i < array.length
      yield(array[i])
      i+=1
+    end
+  else
+    "no block given"
+  end
+  array
 end
 
 collection = [1, 2, 3, 4]
